@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A448FA1-F1E5-2C7D-8A51-F13B33DACE07}|GestionHoteles\\GestionHoteles.vbproj|c:\\users\\vick-\\source\\repos\\gestionhoteles\\gestionhoteles\\modulovalidaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A448FA1-F1E5-2C7D-8A51-F13B33DACE07}|GestionHoteles\\GestionHoteles.vbproj|solutionrelative:gestionhoteles\\modulovalidaciones.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A448FA1-F1E5-2C7D-8A51-F13B33DACE07}|GestionHoteles\\GestionHoteles.vbproj|c:\\users\\vick-\\source\\repos\\gestionhoteles\\gestionhoteles\\formdetalle.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1A448FA1-F1E5-2C7D-8A51-F13B33DACE07}|GestionHoteles\\GestionHoteles.vbproj|solutionrelative:gestionhoteles\\formdetalle.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ModuloValidaciones.vb",
+              "DocumentMoniker": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\GestionHoteles\\ModuloValidaciones.vb",
+              "RelativeDocumentMoniker": "GestionHoteles\\ModuloValidaciones.vb",
+              "ToolTip": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\GestionHoteles\\ModuloValidaciones.vb",
+              "RelativeToolTip": "GestionHoteles\\ModuloValidaciones.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-06-17T21:31:44.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormDetalle.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\GestionHoteles\\FormDetalle.vb",
               "RelativeDocumentMoniker": "GestionHoteles\\FormDetalle.vb",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Empleado.vb",
               "DocumentMoniker": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\GestionHoteles\\Empleado.vb",
               "RelativeDocumentMoniker": "GestionHoteles\\Empleado.vb",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\vick-\\source\\repos\\GestionHoteles\\GestionHoteles\\Form1.vb",
               "RelativeDocumentMoniker": "GestionHoteles\\Form1.vb",

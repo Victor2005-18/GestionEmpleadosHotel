@@ -66,4 +66,12 @@
 
     End Function
 
+    Public Function EsDepartamentoValido(departamento As String) As Boolean
+
+        Return departamento = "Sistemas" OrElse
+               departamento = "Ventas" OrElse
+               departamento = "Administración" OrElse
+               departamento = "Producción"
+
+    End Function
 End Module

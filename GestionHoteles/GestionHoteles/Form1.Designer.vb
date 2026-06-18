@@ -41,9 +41,10 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(346, 30)
+        Label1.Location = New Point(49, 19)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(78, 25)
+        Label1.Size = New Size(53, 15)
         Label1.TabIndex = 0
         Label1.Text = "Principal"
         ' 
@@ -51,10 +52,11 @@ Partial Class Form1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {nombre, rfc, tipo, departamento, pago_mensual})
-        DataGridView1.Location = New Point(1, 42)
+        DataGridView1.Location = New Point(21, 52)
+        DataGridView1.Margin = New Padding(2, 2, 2, 2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(818, 225)
+        DataGridView1.Size = New Size(640, 136)
         DataGridView1.TabIndex = 1
         ' 
         ' nombre
@@ -94,36 +96,40 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(88, 393)
+        Button1.Location = New Point(21, 225)
+        Button1.Margin = New Padding(2, 2, 2, 2)
         Button1.Name = "Button1"
-        Button1.Size = New Size(112, 34)
+        Button1.Size = New Size(78, 20)
         Button1.TabIndex = 2
         Button1.Text = "Ver Detalle"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(329, 393)
+        Button2.Location = New Point(133, 225)
+        Button2.Margin = New Padding(2, 2, 2, 2)
         Button2.Name = "Button2"
-        Button2.Size = New Size(158, 34)
+        Button2.Size = New Size(111, 20)
         Button2.TabIndex = 3
         Button2.Text = "Nuevo Operario"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(596, 393)
+        Button3.Location = New Point(268, 225)
+        Button3.Margin = New Padding(2, 2, 2, 2)
         Button3.Name = "Button3"
-        Button3.Size = New Size(158, 34)
+        Button3.Size = New Size(111, 20)
         Button3.TabIndex = 4
         Button3.Text = "Nuevo Gerente"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(346, 464)
+        Button4.Location = New Point(421, 225)
+        Button4.Margin = New Padding(2, 2, 2, 2)
         Button4.Name = "Button4"
-        Button4.Size = New Size(112, 34)
+        Button4.Size = New Size(78, 20)
         Button4.TabIndex = 5
         Button4.Text = "Eliminar"
         Button4.UseVisualStyleBackColor = True
@@ -131,26 +137,28 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(115, 473)
+        Label2.Location = New Point(21, 302)
+        Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(142, 25)
+        Label2.Size = New Size(94, 15)
         Label2.TabIndex = 6
         Label2.Text = "Total Empleados"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(614, 469)
+        Label3.Location = New Point(421, 302)
+        Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(117, 25)
+        Label3.Size = New Size(79, 15)
         Label3.TabIndex = 7
         Label3.Text = "Total Nomina"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(831, 593)
+        ClientSize = New Size(684, 356)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Button4)
@@ -159,6 +167,7 @@ Partial Class Form1
         Controls.Add(Button1)
         Controls.Add(DataGridView1)
         Controls.Add(Label1)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "Form1"
         Text = "Form1"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()

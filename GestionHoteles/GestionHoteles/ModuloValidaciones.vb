@@ -1,4 +1,6 @@
-﻿Module ModuloValidaciones
+﻿Imports System.Globalization
+
+Module ModuloValidaciones
 
     Public Function EsRFCValido(rfc As String) As Boolean
 
@@ -62,7 +64,7 @@
 
     Public Function FormatearMoneda(valor As Decimal) As String
 
-        Return valor.ToString("C2")
+        Return valor.ToString("C2", CultureInfo.CurrentCulture)
 
     End Function
 

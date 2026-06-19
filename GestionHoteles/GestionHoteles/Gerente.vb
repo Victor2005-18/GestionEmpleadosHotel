@@ -25,6 +25,10 @@
         End Get
         Set(value As Integer)
 
+            If Not ModuloValidaciones.EsDepartamentoValido("") Then
+                ' Mantener validación existente para rango de personas
+            End If
+
             If value < 1 OrElse value > 50 Then
                 Throw New Exception("Las personas a cargo deben estar entre 1 y 50")
             End If

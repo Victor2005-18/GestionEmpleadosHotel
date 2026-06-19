@@ -7,50 +7,25 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ' Nuevo Operario
-        Try
-            Dim nombre = InputBox("Nombre:", "Nuevo Operario")
-            Dim rfc = InputBox("RFC (13 chars):", "Nuevo Operario")
-            Dim salarioText = InputBox("Salario Base:", "Nuevo Operario")
-            Dim departamento = InputBox("Departamento (Sistemas/Ventas/Administración/Producción):", "Nuevo Operario")
-            Dim turno = InputBox("Turno (Matutino/Vespertino/Nocturno):", "Nuevo Operario")
-            Dim horasText = InputBox("Horas Extras (0-80):", "Nuevo Operario")
-
-            Dim salario As Decimal = Decimal.Parse(salarioText)
-            Dim horas As Integer = Integer.Parse(horasText)
-
-            Dim op As New Operario(nombre, rfc, salario, departamento, turno, horas)
-            empleados.Add(op)
-
-            RefreshGridAndTotals()
-
-        Catch ex As Exception
-            MessageBox.Show("Error creando Operario: " & ex.Message)
-        End Try
+        ' Nuevo Operario (formulario)
+        Using f As New FormNuevoOperario()
+            Dim res = f.ShowDialog()
+            If res = DialogResult.OK AndAlso f.EmpleadoCreado IsNot Nothing Then
+                empleados.Add(f.EmpleadoCreado)
+                RefreshGridAndTotals()
+            End If
+        End Using
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        ' Nuevo Gerente
-        Try
-            Dim nombre = InputBox("Nombre:", "Nuevo Gerente")
-            Dim rfc = InputBox("RFC (13 chars):", "Nuevo Gerente")
-            Dim salarioText = InputBox("Salario Base:", "Nuevo Gerente")
-            Dim departamento = InputBox("Departamento (Sistemas/Ventas/Administración/Producción):", "Nuevo Gerente")
-            Dim bonoText = InputBox("Porcentaje Bono (5-40):", "Nuevo Gerente")
-            Dim personasText = InputBox("Personas a cargo (1-50):", "Nuevo Gerente")
-
-            Dim salario As Decimal = Decimal.Parse(salarioText)
-            Dim bono As Integer = Integer.Parse(bonoText)
-            Dim personas As Integer = Integer.Parse(personasText)
-
-            Dim g As New Gerente(nombre, rfc, salario, departamento, bono, personas)
-            empleados.Add(g)
-
-            RefreshGridAndTotals()
-
-        Catch ex As Exception
-            MessageBox.Show("Error creando Gerente: " & ex.Message)
-        End Try
+        ' Nuevo Gerente (formulario)
+        Using f As New FormNuevoGerente()
+            Dim res = f.ShowDialog()
+            If res = DialogResult.OK AndAlso f.EmpleadoCreado IsNot Nothing Then
+                empleados.Add(f.EmpleadoCreado)
+                RefreshGridAndTotals()
+            End If
+        End Using
     End Sub
 
     Private Sub RefreshGridAndTotals()
